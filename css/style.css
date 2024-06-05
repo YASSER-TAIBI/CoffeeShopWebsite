@@ -48,6 +48,30 @@ h4,
     }
 }
 
+/* Par défaut, pour les écrans de toutes tailles */
+.logo {
+    max-width: 300px;
+    height: auto;
+}
+/* Pour les écrans de taille PC uniquement */
+@media (min-width: 992px) {
+    .logo {
+        max-width: 300px;
+    }
+}
+/* Pour les écrans de taille tablette */
+@media (max-width: 991px) {
+    .logo {
+        max-width: 200px;
+    }
+}
+/* Pour les écrans de taille mobile */
+@media (max-width: 767px) {
+    .logo {
+        max-width: 150px;
+    }
+}
+
 .container-fluid.nav-bar,
 .nav-bar.container-sm,
 .nav-bar.container-md,
@@ -72,29 +96,6 @@ h4,
 .pb-3, .py-3 {
     padding-bottom: 0.5rem !important;
     padding-top: 0.5rem !important;
-}
-
-/* Par défaut, pour les écrans de toutes tailles */
-.display-4 {
-    font-size: 2.5rem !important;
-}
-/* Pour les écrans de taille PC uniquement */
-@media (min-width: 992px) {
-    .display-4 {
-        font-size: 2.5rem !important;
-    }
-}
-/* Pour les écrans de taille tablette */
-@media (max-width: 991px) {
-    .display-4 {
-        font-size: 2.0rem !important;
-    }
-}
-/* Pour les écrans de taille mobile */
-@media (max-width: 767px) {
-    .display-4 {
-        font-size: 1.5rem !important;
-    }
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -152,5 +153,18 @@ h4,
     top: 0;
     left: 50%;
     margin-left: 1px;
+    background: #DA9F5B;
+}
+
+.service-icon {
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    color: #33211D;
     background: #DA9F5B;
 }
