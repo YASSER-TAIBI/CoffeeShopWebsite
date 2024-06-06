@@ -187,3 +187,30 @@ h4,
     color: #33211D;
     background: #DA9F5B;
 }
+
+.form-group {
+    ::placeholder {
+        color: white !important; /* Adjust the opacity as needed */
+    }
+}
+.form-control {
+    color: #fff !important;
+}
+
+/* Default color for all options */
+.custom-select option {
+    color: black; /* Or any other default color */
+}
+
+/* Specific styling for the selected option (handled by JavaScript) */
+.custom-select option[selected] {
+    color: white; /* White color for the selected text */
+}
+
+/* Styling for the select element */
+.custom-select {
+    background-color: transparent;
+    color: white; /* Initial color for the selected option */
+}
+
+
