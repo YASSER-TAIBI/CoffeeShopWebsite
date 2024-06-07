@@ -50,19 +50,19 @@ h4,
 
 /* Par défaut, pour les écrans de toutes tailles */
 .logo {
-    max-width: 280px;
+    max-width: 230px;
     height: auto;
 }
 /* Pour les écrans de taille PC uniquement */
 @media (min-width: 992px) {
     .logo {
-        max-width: 280px;
+        max-width: 230px;
     }
 }
 /* Pour les écrans de taille tablette */
 @media (max-width: 991px) {
     .logo {
-        max-width: 200px;
+        max-width: 180px;
     }
 }
 /* Pour les écrans de taille mobile */
@@ -252,3 +252,21 @@ h4,
     list-style-type: none;
 }
 
+.reservation,
+.page-header,
+.offer,
+.footer {
+    background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url(../img/bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+    animation: action 1s infinite alternate;
+}
