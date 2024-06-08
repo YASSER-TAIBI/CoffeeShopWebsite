@@ -64,7 +64,10 @@
         return false;
     });
 
+    // Menu tabs
+    $(function() {
+        $("#tabs").tabs();
+    });
 
 
-
-})(jQuery);
+})(window.jQuery);

@@ -270,3 +270,49 @@ h4,
     z-index: 11;
     animation: action 1s infinite alternate;
 }
+
+/*
+---------------------------------------------
+offers
+---------------------------------------------
+*/
+
+.heading-tabs {
+    text-align: center;
+}
+
+.heading-tabs .main-dark-button {
+    text-align: right;
+}
+
+#tabs ul {
+    padding: 0;
+}
+#tabs ul li {
+    display: inline-block;
+    margin: 0px 15px 15px 0px;
+}
+#tabs ul li a {
+    text-transform: capitalize;
+    width: 100%;
+    display: inline-block;
+    color: #2a2a2a;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+#tabs ul li a img {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+#tabs ul .ui-tabs-active a {
+    color: #DA9F5B;
+    position: relative;
+}
+
+#tabs ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
